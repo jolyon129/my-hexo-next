@@ -31,7 +31,7 @@
           <br/>
           <p>热评文章</p>
           <!-- 多说热评文章 start -->
-          <div class="ds-top-threads" data-range="daily" data-num-items="3"></div>
+          <div class="ds-top-threads" data-range="weekly" data-num-items="3"></div>
           <!-- 多说热评文章 end -->
           {% if not is_post() and (page.prev || page.next) %}
             <div class="pagination">
