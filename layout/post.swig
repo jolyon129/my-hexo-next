@@ -28,9 +28,12 @@
       </div>
       </div> 
       <!--多说分享end-->
+      <!--多说评论start-->
         <div class="ds-thread" data-thread-key="{{ page.path }}"
              data-title="{{ page.title }}" data-url="{{ page.permalink }}">
         </div>
+      <!--多说评论end-->
+
 
       {% elseif config.disqus_shortname %}
         <div id="disqus_thread">

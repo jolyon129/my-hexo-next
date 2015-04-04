@@ -26,6 +26,7 @@
       </div>
     </div>
   {% else %}
+  <!--在关于页面添加评论-->
     {{ page.content }}
     {% if (config.duoshuo and config.duoshuo.shortname) or config.duoshuo_shortname %}
     <div class="ds-thread" data-thread-key="{{ page.path }}"

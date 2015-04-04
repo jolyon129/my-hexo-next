@@ -11,6 +11,19 @@
 
 {% if theme.menu %}
   <ul id="menu" class="menu">
+    <!--增加swiftype搜索功能-->
+    <form class="menu-item menu-item-{{ itemName }}">
+      <input type="text" id="st-search-input" class="st-search-input" style="width:80px;"  />
+    </form>
+    <script type="text/javascript">
+    (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+    })(window,document,'script','//s.swiftypecdn.com/install/v1/st.js','_st');
+
+    _st('install','yVq4cdjJ_oPJ2RrFPhkP');
+    </script>
+    <!--增加搜索功能end-->
     {% for name, path in theme.menu %}
       {% set itemName = name.toLowerCase() %}
       <li class="menu-item menu-item-{{ itemName }}">
@@ -20,6 +33,7 @@
         </a>
       </li>
     {% endfor %}
+  <!--增加high一下-->
   <li class="menu-item menu-item-{{ itemName }}">
     <a title="" href='javascript:(function() {
   function c() {
@@ -112,7 +126,7 @@
       N();
       h()
     }, true);
-    e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+    e.innerHTML = " <p>你的浏览器不想让你High起来~.</p> <p>";
     document.body.appendChild(e);
     e.play()
   }
@@ -137,12 +151,14 @@
   var t = 30;
   var n = 350;
   var r = 350;
-  var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+  
+  var i = "//7xiewb.com1.z0.glb.clouddn.com/imageharlem-shake.mp3";
   var s = "mw-harlem_shake_me";
   var o = "im_first";
   var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
   var a = "mw-strobe_light";
-  var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+  
+  var f = "//7xiewb.com1.z0.glb.clouddn.com/imageharlem-shake-style.css";
   var l = "mw_added_css";
   var b = g();
   var w = y();
@@ -172,5 +188,6 @@
   }
 })()    '>High一下</a>
   </li>
+
   </ul>
 {% endif %}

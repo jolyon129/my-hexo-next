@@ -22,7 +22,7 @@
     {% endif %}
 
     <div class="site-overview">
-      <div class="site-author motion-element">
+      <div class="site-autsider motion-element">
         <img class="site-author-image" src="{{ theme.avatar || url_for(theme.images) + '/default_avatar.jpg' }}" alt="{{ theme.author }}" />
         <p class="site-author-name">{{ theme.author }}</p>
       </div>
@@ -57,7 +57,7 @@
         {{ list_categories() }}  
       </div>
       {% endif %}
-
+      <!-- 添加分类end-->
       {% if theme.rss %}
         <div class="feed-link motion-element">
           <a href="{{ url_for(theme.rss) }}">

@@ -28,7 +28,11 @@
           <div id="posts" class="{{ postsClass }}">
             {% block content %}{% endblock %}
           </div>
-
+          <br/>
+          <p>热评文章</p>
+          <!-- 多说热评文章 start -->
+          <div class="ds-top-threads" data-range="daily" data-num-items="3"></div>
+          <!-- 多说热评文章 end -->
           {% if not is_post() and (page.prev || page.next) %}
             <div class="pagination">
               {{ paginator({prev_text: '&laquo;', next_text: '&raquo;', mid_size: 1}) }}
@@ -40,9 +44,7 @@
 
       </div>
 
-      <!--
 
-      -->
 
     </div>
 
@@ -56,6 +58,8 @@
 
     <div class="back-to-top"></div>
   </div>
+  
+
 
   <script type="text/javascript" src="{{ url_for(theme.vendors) }}/jquery/index.js?v=2.1.3"></script>
 

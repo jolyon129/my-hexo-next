@@ -19,7 +19,7 @@ rss:
 # Icon fonts
 # Place your font into next/source/fonts, specify directory-name and font-name here
 # Avialable: default | linecons | fifty-shades | feather
-icon_font: default
+icon_font: feather
 #icon_font: fifty-shades
 #icon_font: feather
 #icon_font: linecons
