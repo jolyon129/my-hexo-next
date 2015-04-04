@@ -29,17 +29,26 @@
       <p class="site-description motion-element">{{ theme.description }}</p>
       <div class="site-state motion-element">
         <div class="site-state-item site-state-posts">
-          <a href="{{ url_for('/archives') }}"><span class="site-state-item-count">{{ site.posts.length }}</span></a>
-          <span class="site-state-item-name">{{ __('state.posts') }}</span>
+          <a href="{{ url_for(theme.menu.archives) }}">
+            <span class="site-state-item-count">{{ site.posts.length }}</span>
+            <span class="site-state-item-name">{{ __('state.posts') }}</span>
+          </a>
         </div>
+
+        <div class="site-state-item site-state-categories">
+          {% if theme.menu.categories %}<a href="{{ url_for(theme.menu.categories) }}">{% endif %}
+            <span class="site-state-item-count">{{ site.categories.length }}</span>
+            <span class="site-state-item-name">{{ __('state.categories') }}</span>
+          {% if theme.menu.categories %}</a>{% endif %}
+        </div>
+
         <div class="site-state-item site-state-tags">
-            <a href="{{ url_for('/tags') }}"><span class="site-state-item-count">{{ site.tags.length }}</span></a>
+          {% if theme.menu.tags %}<a href="{{ url_for(theme.menu.tags) }}">{% endif %}
+            <span class="site-state-item-count">{{ site.tags.length }}</span>
             <span class="site-state-item-name">{{ __('state.tags') }}</span>
+          {% if theme.menu.tags %}</a>{% endif %}
         </div>
-        <div class="site-state-item site-state-pages">
-            <a><span class="site-state-item-count">{{ site.pages.length }}</span></a>
-            <span class="site-state-item-name">{{ __('state.pages') }}</span>
-        </div>
+
       </div>
 
       <!--添加分类-->
@@ -62,7 +71,7 @@
         {% if theme.social %}
           {% for name, link in theme.social %}
             <span class="links-of-author-item">
-              <a href="{{ link }}">{{ name }}</a>
+              <a href="{{ link }}" target="_blank">{{ name }}</a>
             </span>
           {% endfor %}
         {% endif %}
