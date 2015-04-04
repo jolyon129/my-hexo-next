@@ -28,6 +28,8 @@
         <span class="post-time">
           {% if is_home() or is_post() %}
             {{ __('post.posted') }} {{ post.date | date('Y-m-d') }}
+            <!--增加编辑日期-->
+            {{ __('  &nbsp 更新于') }} {{ post.updated | date('Y-m-d')}}
           {% else %}
             {{ post.date | date('m-d') }}
           {% endif %}

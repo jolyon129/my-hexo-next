@@ -5,7 +5,7 @@
   {% else %}
     {% set duoshuo_shortname = config.duoshuo_shortname %}
   {% endif %}
-
+  
   <script type="text/javascript">
     var duoshuoQuery = {short_name:"{{duoshuo_shortname}}"};
     (function() {

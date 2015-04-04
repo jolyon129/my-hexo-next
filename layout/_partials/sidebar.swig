@@ -29,18 +29,25 @@
       <p class="site-description motion-element">{{ theme.description }}</p>
       <div class="site-state motion-element">
         <div class="site-state-item site-state-posts">
-          <span class="site-state-item-count">{{ site.posts.length }}</span>
+          <a href="{{ url_for('/archives') }}"><span class="site-state-item-count">{{ site.posts.length }}</span></a>
           <span class="site-state-item-name">{{ __('state.posts') }}</span>
         </div>
         <div class="site-state-item site-state-tags">
-            <span class="site-state-item-count">{{ site.tags.length }}</span>
+            <a href="{{ url_for('/tags') }}"><span class="site-state-item-count">{{ site.tags.length }}</span></a>
             <span class="site-state-item-name">{{ __('state.tags') }}</span>
         </div>
         <div class="site-state-item site-state-pages">
-            <span class="site-state-item-count">{{ site.pages.length }}</span>
+            <a><span class="site-state-item-count">{{ site.pages.length }}</span></a>
             <span class="site-state-item-name">{{ __('state.pages') }}</span>
         </div>
       </div>
+
+      <!--添加分类-->
+      {% if (site.categories.length) %}
+      <div class="motion-element">
+        {{ list_categories() }}  
+      </div>
+      {% endif %}
 
       {% if theme.rss %}
         <div class="feed-link motion-element">

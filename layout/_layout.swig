@@ -2,6 +2,7 @@
 <html class="theme-next {% if theme.use_motion %}use-motion{% endif %} {% if theme.theme %}theme-next-{{theme.theme}}{% endif %}">
 <head>
   {% include '_partials/head.swig' %}
+  <meta name="baidu-site-verification" content="G9yMkDY5mG" />
   <title>{% block title %}{% endblock %}</title>
 </head>
 
@@ -38,7 +39,14 @@
         {% include '_partials/sidebar.swig' %}
 
       </div>
+
+      <!--
+
+      -->
+
     </div>
+
+    
 
     <div id="footer" class="footer">
       <div class="footer-inner">

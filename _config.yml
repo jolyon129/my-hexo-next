@@ -1,9 +1,9 @@
 menu:
   home: /
-  #categories: /categories
   archives: /archives
+  categories: /categories 
   tags: /tags
-  #about: /about
+  about: /about
 
 # Place your favicon.ico to /source directory.
 favicon: /favicon.ico
@@ -14,7 +14,7 @@ keywords: "Hexo,next"
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: 
 
 # Icon fonts
 # Place your font into next/source/fonts, specify directory-name and font-name here
@@ -27,7 +27,7 @@ icon_font: default
 # Code Highlight theme
 # Available value: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 
 # MathJax Support
@@ -35,7 +35,7 @@ mathjax:
 
 
 # Schemes
-#scheme: Mist
+scheme: Mist
 
 
 # Automatically scroll page to section which is under <!-- more --> mark.
