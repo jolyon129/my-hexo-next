@@ -1,9 +1,9 @@
 menu:
 #  home: /
-  archives: /archives
+  about: /about
   categories: /categories 
   tags: /tags
-  about: /about
+  archives: /archives
 
 # Place your favicon.ico to /source directory.
 favicon: /favicon.ico
