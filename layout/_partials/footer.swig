@@ -14,8 +14,8 @@
 
 <div class="theme-info">
   {{ __('footer.theme') }} -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT{% if theme.scheme %}.{{ theme.scheme }}{% endif %}
+  <a class="theme-link" href="https://github.com/lzlun129/my-hexo-next">
+    Customized.NexT{% if theme.scheme %}.{{ theme.scheme }}{% endif %}
   </a>
 </div>
 
