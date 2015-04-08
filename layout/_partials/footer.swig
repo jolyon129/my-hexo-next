@@ -18,5 +18,10 @@
     Customized.NexT{% if theme.scheme %}.{{ theme.scheme }}{% endif %}
   </a>
 </div>
+<div>
+  <span>ICP证号: <a href=“http://www.miitbeian.gov.cn/”>蜀ICP备15007261号</a></span>
+</div>
+
+
 
 {% block footer %}{% endblock %}

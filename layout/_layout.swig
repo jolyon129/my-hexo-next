@@ -70,9 +70,12 @@
   {% include '_scripts/helpers.swig' %}
   {% include '_scripts/motion.swig' %}
 
+
+
   {% block script_extra %}{% endblock %}
 
   {% include '_scripts/mathjax.swig' %}
+  {% include '_scripts/searchbar.swig'%}
   {% include '_scripts/comments/duoshuo.swig' %}
   {% include '_scripts/comments/disqus.swig' %}
   {% include '_scripts/analytics/google-analytics.swig' %}
