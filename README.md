@@ -12,5 +12,13 @@
 * 增加多说分享
 * 增加多说热评文章
 
-本仓库作为自用备份而已，以上功能增加的非常简单粗暴，没有模块化。。
+感谢[原作者](https://github.com/iissnan/hexo-theme-next)。
+
+-------
+* 增加high一下功能  
+   在配置文件中增加`high: true`
+* 增加侧边栏目录显示  
+   在配置文件中增加`sidebar_category: true`   
+* 增加多说热评文章
+   在配置文件中增加`popular_articles: true`
 

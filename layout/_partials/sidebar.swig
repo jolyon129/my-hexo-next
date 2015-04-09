@@ -50,12 +50,13 @@
         </div>
 
       </div>
-
+      {% if config.sidebar_category == true %}
       <!--添加分类-->
       {% if (site.categories.length) %}
       <div class="motion-element">
         {{ list_categories() }}  
       </div>
+      {% endif %}
       {% endif %}
       <!-- 添加分类end-->
       {% if theme.rss %}
