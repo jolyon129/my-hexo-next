@@ -29,10 +29,16 @@
             {% block content %}{% endblock %}
           </div>
           <br/>
-          <p>热评文章</p>
+          
+          {% if config.duoshuo_shortname and (config.popular_articles == true) %}
           <!-- 多说热评文章 start -->
-          <div class="ds-top-threads" data-range="weekly" data-num-items="3"></div>
+          <div class="ds-hot-articles">
+          <p>  热评文章</p>
+          <div class="ds-top-threads" data-range="weekly" data-num-items="3" >
+          </div>
+          </div>
           <!-- 多说热评文章 end -->
+          {% endif %}
           {% if not is_post() and (page.prev || page.next) %}
             <div class="pagination">
               {{ paginator({prev_text: '&laquo;', next_text: '&raquo;', mid_size: 1}) }}

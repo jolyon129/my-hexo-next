@@ -34,6 +34,7 @@
       </li>
     {% endfor %}
   <!--增加high一下-->
+  {% if config.high == true %}
   <li class="menu-item menu-item-{{ itemName }}">
     <a title="" href='javascript:(function() {
   function c() {
@@ -186,8 +187,8 @@
       O.push(A)
     }
   }
-})()    '>High一下</a>
+  })()    '>High一下</a>
   </li>
-
+  {% endif %}
   </ul>
 {% endif %}
