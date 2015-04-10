@@ -26,16 +26,17 @@
 	 {% endif %}
      {% for name, path in theme.menu %}
         {% set itemName = name.toLowerCase() %}
-      <li class="menu-item menu-item-{{ itemName }}">
+      <li class="mw-harlem_shake_me im_first menu-item  menu-item-{{ itemName }}">
         <a href="{{ url_for(path) }}">
           <i class="menu-item-icon icon-{{ itemName }}"></i> <br />
           {{ __('menu.' + itemName) }}
         </a>
       </li>
+      
     {% endfor %}
   <!--增加high一下-->
   {% if config.high == true %}
-  <li class="menu-item menu-item-{{ itemName }}">
+  <li class="mw-harlem_shake_me im_first  menu-item menu-item-{{ itemName }}">
     <a title="" href='javascript:(function() {
   function c() {
     var e = document.createElement("link");
@@ -118,8 +119,10 @@
       setTimeout(function() {
         N();
         p();
+        
         for (var e = 0; e < O.length; e++) {
-          T(O[e])
+
+          T(O[e]) 
         }
       }, 15500)
     }, true);
