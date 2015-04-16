@@ -17,8 +17,10 @@
 -------
 * 增加high一下功能  
    在配置文件中增加`high: true`
+   
 * 增加侧边栏目录显示  
    在配置文件中增加`sidebar_category: true`   
-* 增加多说热评文章
+   
+* 增加多说热评文章  
    在配置文件中增加`popular_articles: true`
 
