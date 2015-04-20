@@ -23,7 +23,7 @@
 {% if config.icpno %}
 {% set icpno = config.icpno %}
 <div>
-  <span>ICP证号: <a href=“http://www.miitbeian.gov.cn/”>{{ icpno }}</a></span>
+  <span>ICP证号: <a href="http://www.miitbeian.gov.cn/">{{ icpno }}</a></span>
 </div>
 {% endif %}
 
